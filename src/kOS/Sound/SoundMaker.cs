@@ -72,7 +72,7 @@ namespace kOS.Sound
         public void LoadFileSound(string name, string url)
         {
             WWW fileGetter = new WWW(url);
-            AudioClip clip = fileGetter.GetAudioClip();
+            AudioClip clip = fileGetter.audioClip;
             AudioSource source = gameObject.AddComponent<AudioSource>();
             source.clip = clip;
 
